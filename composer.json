@@ -86,7 +86,7 @@
         "ocramius/proxy-manager": "2.11.1",
         "oneup/flysystem-bundle": "^4.0.0",
         "psr/event-dispatcher": "^1.0.0",
-        "ramsey/uuid": "^3.7",
+        "ramsey/uuid": "^4.2",
         "sensio/framework-extra-bundle": "^5.4",
         "symfony/acl-bundle": "^2.1.0",
         "symfony/asset": "^5.3",
