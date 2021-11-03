@@ -23,9 +23,10 @@ class InMemorySearchJobExecution implements SearchJobExecutionInterface
         $paginatedJobExecution = array_slice($jobExecutions, $query->page * $query->size, $query->size);
 
         return array_map(static fn (array $normalizedJobExecution) => new JobExecutionRow(
+            $normalizedJobExecution['id'],
             $normalizedJobExecution['jobName'],
             $normalizedJobExecution['type'],
-            $normalizedJobExecution['startAt'] ?? null,
+            $normalizedJobExecution['startedAt'] ?? null,
             $normalizedJobExecution['username'] ?? null,
             $normalizedJobExecution['status'],
             $normalizedJobExecution['warningCount'],
