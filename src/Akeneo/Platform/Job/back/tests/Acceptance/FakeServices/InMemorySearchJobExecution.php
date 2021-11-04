@@ -30,6 +30,9 @@ class InMemorySearchJobExecution implements SearchJobExecutionInterface
             $normalizedJobExecution['username'] ?? null,
             $normalizedJobExecution['status'],
             $normalizedJobExecution['warningCount'],
+            $normalizedJobExecution['errorCount'],
+            $normalizedJobExecution['currentStep'],
+            $normalizedJobExecution['totalStep'],
         ), $paginatedJobExecution);
     }
 
